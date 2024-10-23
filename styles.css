@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    padding: 0px;
+}
+
+.container {
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding: 2rem 5rem 0;
+}
+
+.top-card {
+    text-align: center;
+}
+
+.Reliable {
+    color: hsl(229, 6%, 66%);
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+.Powered {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.top-card p {
+    color: hsl(229, 6%, 66%);
+    font-size: 1em;
+    margin-top: 1rem;
+}
+
+.cards {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 15px 22px -4px hsla(233, 42%, 30%, 0.233);
+    color: hsl(229, 6%, 66%);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0.5em;
+    position: relative;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+h2 {
+    color: hsl(234, 12%, 34%);
+    font-size: 1em;
+    text-align: start;
+    width: 100%;
+}
+
+img {
+    height: 45px;
+    width: 45px;
+    margin-top: 1em;
+}
+
+.item p {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+    text-align: start;
+    width: 100%;
+}
+
+
+.item::before {
+    content: "";
+    position: absolute;
+    top: -3.5px;
+    right: 4px;
+    left: 4px;
+    height: 7rem;
+    z-index: -1;
+    border-radius: 0.5rem;
+}
+
+.Supervisor::before {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.Team::before {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.Karma::before {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.Calculator::before {
+    background-color: hsl(212, 86%, 64%);
+}
+
+.Supervisor {
+    position: relative;
+    top: 6.5rem;
+}
+
+.Calculator {
+    position: relative;
+    top: 6.5rem;
+}
+
+.Karma {
+    grid-column: 2;
+}
+
+footer {
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 2rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:975px) {
+    img {
+        height: 30px;
+        width: 30px;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    .item p {
+        font-size: 0.6em;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .Powered {
+
+        font-weight: 500;
+    }
+
+    .top-card p {
+        font-size: 0.7em;
+        margin-top: 0.8rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .container{
+        padding: 2rem 1rem 0;
+    }
+
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    .Powered {
+
+        font-weight: 600;
+    }
+
+    .top-card p {
+        font-size: 0.8em;
+        margin-top: 0.8rem;
+    }
+
+    .cards {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+    h2{
+        font-size: 1em;
+    }
+
+    .Supervisor {
+         position: relative;
+         top: 0;
+    }
+    
+    .Calculator {
+        position: relative;
+        top: 0;
+    }
+
+    .item p {
+        font-size: 0.8em;
+    }
+
+    .attribution {
+        font-size: 9px;
+    }
+
+}
